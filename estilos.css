@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.header-image {
+    max-width: 100%;
+    height: auto;
+    height: 130px;
+    width: auto;
+    margin: 0 auto 1.5rem;
+    display: block;
+    object-fit: contain;
+}
+
+h1 {
+    color: #2a3f5f;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.primary-btn {
+    background: #2a3f5f;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #1a2b45;
+}
+
+.ghost-btn {
+    background: white;
+    color: #2a3f5f;
+    border: 1px solid #e0e0e0;
+}
+
+.ghost-btn:hover {
+    background: #f8f9fa;
+}
+
+.text-btn {
+    background: transparent;
+    color: #2a3f5f;
+}
+
+.text-btn:hover {
+    color: #1a2b45;
+}
+
+.footer-text {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+a {
+    color: #2a3f5f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+}
